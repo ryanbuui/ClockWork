@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "ClockWork",
+    "version": "1.0",
+    "description": "A simple to-do list that keeps track of the amount of time you have spent on individual tasks.",
+    "icons": {
+        "128": "/icons/icon128.png",
+        "48": "/icons/icon48.png",
+        "16": "/icons/icon16.png"
+    },
+    "browser_action": {
+        "default icon": "/icons/icon16.png",
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+    },
+    "permissions": [
+        "storage"
+    ]
+}
