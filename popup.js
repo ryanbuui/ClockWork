@@ -62,6 +62,9 @@ function getTimeFromSec(seconds) {
 }
 
 function timerAdd() {
+    if(!(getName() && getDate())) {
+        return;
+    }
     const taskComp = `<li class="task">
     <button class="component taskName" id="taskName${count}">${getName()}</button>
     <button class="component" id="taskDate">${getDate()}</button>
@@ -86,6 +89,9 @@ function timerAdd() {
 }
 
 function reminderAdd() {
+    if(!(getName() && getDate())) {
+        return;
+    }
     const taskComp = `<li class="task">
     <button class="component-2" id="taskName${count}">${getName()}</button>
     <button class="component-2" id="taskDate">${getDate()}</button>
